@@ -2,5 +2,5 @@
  Jogo estilo space war, feito com python...
 
 # Modo de usar
-python main.py \n
-ou executar o .exe
+python main.py 
+
