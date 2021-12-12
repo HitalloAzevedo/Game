@@ -4,4 +4,6 @@
 # Modo de usar
 python main.py 
 
-.f
+python3 main.py
+
+ou executar o meu_joguinho.exe
