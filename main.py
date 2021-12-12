@@ -6,6 +6,7 @@ sys.path.append(dirpath)
 if getattr(sys, "frozen", False):
     os.chdir(sys._MEIPASS)
 
+pygame.init()
 pygame.font.init()
 pygame.mixer.init()
 
@@ -30,7 +31,7 @@ WINNER_FONT = pygame.font.SysFont('comicsans', 100)
 FPS = 60
 VEL = 5
 BULLET_VEL = 7
-MAX_BULLETS = 3
+MAX_BULLETS = 10
 SPACESHIP_WIDTH, SPACESHIP_HEIGHT = 55, 40
 
 YELLOW_HIT = pygame.USEREVENT + 1
@@ -117,7 +118,7 @@ def draw_winner(text):
     draw_text = WINNER_FONT.render(text, 1, WHITE)
     WIN.blit(draw_text, (WIDTH/2 - draw_text.get_width()/2, HEIGHT/2 - draw_text.get_height()/2))
     pygame.display.update()
-    pygame.time.delay(5000)
+    pygame.time.delay(2000)
 
 
 def main():
